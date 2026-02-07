@@ -1,6 +1,8 @@
 # Retail Mart - Flutter E-commerce App
 
-A beautiful e-commerce Flutter application with three screens: Home, Product Details, and Cart.
+A beautiful e-commerce mobile application with three screens: Home, Product Details, and Cart.
+
+This app provides a smooth and efficient way to browse and shop for products.
 
 ## Features
 
@@ -69,7 +71,8 @@ return data.map((json) => Product.fromJson(json)).toList();
 - Search functionality
 - Bottom navigation
 
-![Home Screen](screenshots/homescreen.jpg)
+<img src="screenshots/homescreen.jpg" alt="Home Screen" width="600"/>
+
 
 ### 2. Product Detail Screen (`/product/:id`)
 - Product image with thumbnails

@@ -1,0 +1,59 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+MY FOLDER STRUCTURE
+
+
+lib/
+├── design_system/                 # UI Tokens, Components, Theme
+│   ├── tokens/
+│   ├── theme/
+│   └── components/
+
+├── features/                     # App Features (screens + logic)
+│   ├── home/
+│   │   ├── presentation/
+│   │   │   └── home_page.dart
+│   │   ├── application/
+│   │   │   └── home_controller.dart       # Riverpod logic
+│   │   ├── domain/
+│   │   │   └── home_model.dart            # Entity
+│   │   └── data/
+│   │       ├── home_service.dart          # Dio request
+│   │       └── home_repository.dart       # Connects service ↔ app logic
+│
+│   └── auth/
+│       ├── presentation/
+│       │   └── login_page.dart
+│       ├── application/
+│       │   └── auth_controller.dart
+│       ├── domain/
+│       │   └── user_model.dart
+│       └── data/
+│           └── auth_service.dart
+
+├── core/                         # App-wide core logic
+│   ├── services/                 # e.g., Dio client, interceptors
+│   ├── providers/                # Global Riverpod providers (e.g. Dio, Theme)
+│   ├── constants/                # Strings, Enums, Configs
+│   └── exceptions/               # API error handling
+
+├── routes/
+│   └── app_router.dart           # go_router setup
+
+├── shared/                      # Widgets, utils used across features
+│   ├── widgets/
+│   ├── utils/
+│   └── extensions/
+
+├── main.dart

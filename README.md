@@ -69,6 +69,8 @@ return data.map((json) => Product.fromJson(json)).toList();
 - Search functionality
 - Bottom navigation
 
+(screenshots/homescreen.png)
+
 ### 2. Product Detail Screen (`/product/:id`)
 - Product image with thumbnails
 - Size selection
@@ -159,6 +161,7 @@ flutter build ios --release
 - Add your API URL in `api_service.dart`
 - Implement authentication if required
 - Add payment gateway integration for checkout
+
 
 ## License
 

@@ -69,7 +69,7 @@ return data.map((json) => Product.fromJson(json)).toList();
 - Search functionality
 - Bottom navigation
 
-(screenshots/homescreen.png)
+![Home Screen](screenshots/homescreen.jpg)
 
 ### 2. Product Detail Screen (`/product/:id`)
 - Product image with thumbnails
